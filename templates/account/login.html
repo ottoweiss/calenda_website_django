@@ -1,0 +1,13 @@
+<head>
+<style>
+</style>
+<h2>The Calendar Website</h2>
+</head>
+<body>
+    <form method="post", ALIGN = 'center' >
+        {% block raw %}{% csrf_token %}
+        {{ form.as_p }}{% endblock %}
+        <button type="submit">Log In</button>
+    </form>
+</body>
+ 
